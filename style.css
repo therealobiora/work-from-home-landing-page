@@ -11,7 +11,7 @@ main {
     url("background1.jpeg");
   background-size: cover;
   color: white;
-  padding: 0px 150px;
+  /* padding: 0px 150px; */
 }
 
 header {
@@ -26,6 +26,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.body-sec {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
 }
 
 .body h1 {
@@ -91,4 +99,33 @@ header {
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    /* width: 800px; */
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .body div {
+    align-items: center;
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .cat {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    /* width: 800px; */
+    flex-direction: column;
+    text-align: center;
+  }
 }
